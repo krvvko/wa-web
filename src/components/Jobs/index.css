@@ -1,0 +1,69 @@
+.jobs-container {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.job-element {
+    display: flex;
+    flex-direction: column;
+    background: var(--block-color-1);
+    padding: 1em;
+    border-radius: var(--border-radius-3);
+    overflow: hidden;
+}
+.job-top {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6em;
+    padding-bottom: 0.65em;
+    border-bottom: 1px solid var(--border-color-1);
+}
+.job-top > img {
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--blue-1);
+}
+.job-top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.job-top-text > span:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.job-top-text > span:nth-child(2) {
+    font-size: 0.9rem;
+    color: var(--color-2);
+}
+.job-desc {
+    margin: 0.5em 0;
+}
+.job-picture {
+    border-radius: var(--border-radius-2);
+    margin-bottom: 6px;
+}
+.job-contacts, .job-requirements {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+.job-requirements {
+    margin-bottom: unset;
+}
+a.job-contact {
+    margin-left: 8px;
+    padding-left: 8px;
+    color: var(--blue-1);
+    border-left: 2px solid var(--border-color-1);
+}
+span.job-contact {
+    color: var(--color-2);
+}
+span.job-requirement {
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 2px solid var(--border-color-1);
+}

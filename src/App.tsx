@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import {Route, Routes} from "react-router-dom";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Events from "./components/Events";
+import News from "./components/News";
+import Jobs from "./components/Jobs";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: React.FC = () => {
+    return (
+        <>
+            <Header />
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/events" element={<Events />} />
+                    <Route path="/news" element={<News />} />
+                    <Route path="/jobs" element={<Jobs />} />
+                </Routes>
+            </main>
+            <Footer />
+        </>
+    );
 }
 
 export default App;
